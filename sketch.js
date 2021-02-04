@@ -98,7 +98,7 @@ function keyPressed(){
 }
 
 async function getTime() {
-    var response= await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response= await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
     var responseJson= await response.json();
     var dt = await responseJson.datetime;
     var hour= dt.slice(11,13);
